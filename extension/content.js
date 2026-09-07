@@ -93,7 +93,7 @@
     </style>
     <div class="panel">
       <div class="header" id="drag-handle">
-        <span>Заявка</span>
+        <span>bbid/bask</span>
         <button id="toggle" title="Свернуть/развернуть">–</button>
       </div>
       <div class="body" id="body">

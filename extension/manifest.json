@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Быстрые заявки — Т-Банк Инвестиции",
+  "name": "bbshkn",
   "version": "0.1.0",
   "description": "Минималистичная панель поверх терминала tbank.ru: заявка по лучшему биду/аску через T-Invest API, котировки из T-Invest или MOEX ISS/Алгопак.",
   "permissions": ["storage"],
