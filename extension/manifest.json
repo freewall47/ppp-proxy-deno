@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Быстрые заявки — Т-Банк Инвестиции",
+  "version": "0.1.0",
+  "description": "Минималистичная панель поверх терминала tbank.ru: заявка по лучшему биду/аску через T-Invest API, котировки из T-Invest или MOEX ISS/Алгопак.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://invest-public-api.tinkoff.ru/*",
+    "https://iss.moex.com/*",
+    "https://passport.moex.com/*"
+  ],
+  "optional_host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.tbank.ru/terminal/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Настройки быстрых заявок"
+  },
+  "options_page": "options.html"
+}
