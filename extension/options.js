@@ -1,7 +1,7 @@
 const DEFAULT_SETTINGS = {
   token: '',
   accountId: '',
-  dataSource: 'tinkoff',
+  dataSource: 'moex',
   moexLogin: '',
   moexPassword: '',
   useProxy: false,

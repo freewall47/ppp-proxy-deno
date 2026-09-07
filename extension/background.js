@@ -2,9 +2,9 @@
 //
 // Talks to the T-Invest API (invest-public-api.tinkoff.ru) to place a
 // marketable-at-top-of-book limit order: buy at the current best bid,
-// sell at the current best ask. Quotes come either straight from T-Invest
-// MarketDataService (default, zero extra setup) or from MOEX ISS/Algopack
-// (requires a MOEX Passport login with an Algopack subscription).
+// sell at the current best ask. Quotes come from MOEX ISS/Algopack by
+// default (requires a MOEX Passport login with an Algopack subscription),
+// with a fallback to T-Invest MarketDataService that needs no extra setup.
 //
 // NOTE: field/method names follow the public T-Invest API REST gateway as
 // documented at developer.tbank.ru at the time this was written. The API
@@ -21,7 +21,7 @@ const moexOrderbookUrl = (secid) =>
 const DEFAULT_SETTINGS = {
   token: '',
   accountId: '',
-  dataSource: 'tinkoff', // 'tinkoff' | 'moex'
+  dataSource: 'moex', // 'moex' | 'tinkoff'
   moexLogin: '',
   moexPassword: '',
   useProxy: false,
