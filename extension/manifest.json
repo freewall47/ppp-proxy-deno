@@ -3,6 +3,11 @@
   "name": "bbshkn",
   "version": "0.1.0",
   "description": "Минималистичная панель поверх терминала tbank.ru: заявка по лучшему биду/аску через T-Invest API, котировки из T-Invest или MOEX ISS/Алгопак.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "permissions": ["storage"],
   "host_permissions": [
     "https://invest-public-api.tinkoff.ru/*",
